@@ -5,6 +5,7 @@ const LEDIGA_DAGAR = new Set([
     "2026-05-13",
     "2026-05-14",
     "2026-05-15",
+    "2026-05-18",
 ]);
 
 const SOMMARLOV = new Date("2026-06-10");
