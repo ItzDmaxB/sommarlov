@@ -44,8 +44,8 @@ function countCalendarDays(from, to) {
 const tomorrow = new Date(today);
 tomorrow.setDate(today.getDate() + 1);
 
-const schoolDaysLeft = countSchoolDays(today, SOMMARLOV);
-const calenderDaysLeft = countCalendarDays(today, SOMMARLOV);
+const schoolDaysLeft = countSchoolDays(tomorrow, SOMMARLOV);
+const calenderDaysLeft = countCalendarDays(tomorrow, SOMMARLOV);
 
 schooldays.textContent = schoolDaysLeft;
 weekdays.textContent = calenderDaysLeft;
