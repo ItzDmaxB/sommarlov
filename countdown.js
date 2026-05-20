@@ -41,6 +41,9 @@ function countCalendarDays(from, to) {
     return Math.ceil((to - from) / msPerDay);
 }
 
+const today = new Date();
+today.setHours(0, 0, 0, 0);
+
 const tomorrow = new Date(today);
 tomorrow.setDate(today.getDate() + 1);
 
