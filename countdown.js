@@ -2,13 +2,16 @@ const weekdays = document.getElementById('weekdays');
 const schooldays = document.getElementById('schooldays');
 
 const LEDIGA_DAGAR = new Set([
-    "2026-05-13",
-    "2026-05-14",
-    "2026-05-15",
-    "2026-05-18",
+    "2026-02-17",
+    "2026-03-01",
+    "2026-03-02",
+    "2026-03-03",
+    "2026-03-04",
+    "2026-03-05",
+    "2026-05-7",
 ]);
 
-const SOMMARLOV = new Date("2026-06-10");
+const SOMMARLOV = new Date("2027-06-10");
 
 function isSchoolDay(date) {
     const dayOfWeek = date.getDay();
